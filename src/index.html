@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <div class="bg-[#091057] h-screen flex justify-center items-center">
+      <div class="bg-[#024CAA] p-2 rounded-lg flex flex-col gap-2">
+        <input
+          type="text"
+          name="display"
+          id="display"
+          value="0"
+          class="bg-[#EC8305] px-4 py-2 rounded-lg w-full focus:outline-none text-right text-[#DBD3D3]"
+          disabled
+        />
+
+        <div class="grid grid-cols-4 gap-2 text-[#DBD3D3]">
+          <button value="7" class="p-2 button bg-[#091057] rounded-md">
+            7
+          </button>
+          <button value="8" class="p-2 button bg-[#091057] rounded-md">
+            8
+          </button>
+          <button value="9" class="p-2 button bg-[#091057] rounded-md">
+            9
+          </button>
+          <button value="/" class="p-2 button operator bg-[#EC8305] rounded-md">
+            /
+          </button>
+
+          <button value="4" class="p-2 button bg-[#091057] rounded-md">
+            4
+          </button>
+          <button value="5" class="p-2 button bg-[#091057] rounded-md">
+            5
+          </button>
+          <button value="6" class="p-2 button bg-[#091057] rounded-md">
+            6
+          </button>
+          <button value="*" class="p-2 button operator bg-[#EC8305] rounded-md">
+            *
+          </button>
+
+          <button value="1" class="p-2 button bg-[#091057] rounded-md">
+            1
+          </button>
+          <button value="2" class="p-2 button bg-[#091057] rounded-md">
+            2
+          </button>
+          <button value="3" class="p-2 button bg-[#091057] rounded-md">
+            3
+          </button>
+          <button value="-" class="p-2 button operator bg-[#EC8305] rounded-md">
+            -
+          </button>
+
+          <button value="0" class="p-2 button bg-[#091057] rounded-md">
+            0
+          </button>
+          <button value="." class="p-2 button bg-[#091057] rounded-md">
+            .
+          </button>
+          <button value="C" class="p-2 button bg-[#091057] rounded-md">
+            C
+          </button>
+          <button value="+" class="p-2 button operator bg-[#EC8305] rounded-md">
+            +
+          </button>
+
+          <button
+            value="="
+            class="p-2 button bg-[#EC8305] rounded-md col-span-4"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
